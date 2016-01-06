@@ -40,7 +40,7 @@ describe "#prompt_user" do
 end
 
 describe "#get_user_input" do
-  it "returns the value of a `gets.chomp` method" do
+  it "returns the value of a 'gets.chomp' method" do
     ["h", "s", "exit"].each do |string|
       expect(self).to receive(:gets).and_return(string)
       expect(get_user_input).to eq(string)
